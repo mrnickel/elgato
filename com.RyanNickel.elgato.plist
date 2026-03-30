@@ -2,19 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-   <key>Label</key>
-   <string>com.RyanNickel.elgato</string>
-   
-   <key>OnDemand</key>
-   <false/>
-   
-   <key>ProgramArguments</key>
-   <array>
-      <string>/usr/local/bin/elgato.sh</string>
-   </array>
+  <key>Label</key>
+  <string>com.RyanNickel.elgato</string>
 
-   <key>RunAtLoad</key>
-   <true/>
-  
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/nickel/bin/elgato.sh</string>
+  </array>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>KeepAlive</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/nickel/Library/Logs/elgato.standard.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/nickel/Library/Logs/elgato.error.log</string>
 </dict>
 </plist>
